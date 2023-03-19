@@ -35,11 +35,19 @@ const styles = StyleSheet.create({
   button_PRIMARY:{
     backgroundColor: '#3b71fb',
   },
+  button_SECONDARY:{
+    borderWidth: 2,
+    borderColor: '#3b71fb',
+    borderStyle: 'solid',
+  },
   button_TERTIARY:{
     backgroundColor: '#f9fbfc',
   },
   text_PRIMARY:{
     color: '#fff',
+  },
+  text_SECONDARY:{
+    color: '#3b71fb',
   },
   text_TERTIARY:{
     color: 'gray',

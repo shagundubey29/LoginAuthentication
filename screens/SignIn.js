@@ -6,7 +6,7 @@ import Logo from '../assets/images/logo.png'
 import CustomInput from '../components/CustomInput'
 import CustomButton from '../components/CustomButton'
 
-const SignIn = () => {
+const SignIn = ({ navigation }) => {
     const height =  Dimensions.get('window').height;
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
@@ -14,7 +14,7 @@ const SignIn = () => {
         console.warn('Sign In');
     };
     const onpressForgetPassword = () => {
-        console.warn('Forget Password');
+        navigation.navigate('ResetPassword');
     };
     const onSignInGoogle = () => {
         console.warn('Sign In with Google');
@@ -26,7 +26,7 @@ const SignIn = () => {
         console.warn('Sign In with Apple');
     };
     const onSignUpPress = () => {
-        console.warn('Sign Up Press');
+        navigation.navigate('SignUp');
     };
   return (
     <ScrollView>
